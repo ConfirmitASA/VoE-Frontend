@@ -18,10 +18,6 @@ body {
     line-height: normal
 }
 
-/* *, :after, :before {
-  box-sizing: inherit
-}*/
-
 ol, ul {
     list-style: none
 }
@@ -79,44 +75,3 @@ body {
     position: absolute;
     width: 1px
 }
-
-/*
-.view-navigation {
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #34393f;
-  color: #fff;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
-  height: 36px;
-  list-style: none;
-  margin: 0;
-  padding: 0 1.5em
-}
-
-.view-navigation li {
-  border-right: 1px solid #474c51;
-  height: inherit
-}
-
-.view-navigation li:first-child {
-  border-left: 1px solid #474c51
-}
-
-.view-navigation li a {
-  -ms-flex-align: center;
-  align-items: center;
-  color: #fff;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: .8em;
-  height: inherit;
-  padding: 0 1.5em;
-  text-decoration: none
-}
-
-.view-navigation li a:hover {
-  background-color: #24272b
-}
-*/

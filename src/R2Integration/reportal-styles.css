@@ -230,10 +230,6 @@ TA FIXES
     height: auto;
     padding: 5px 8px;
     line-height: 1rem;
-
-    /*background-color: #d4d7db;
-    color: #444;
-    border-radius: 30px;*/
 }
 
 .filter-bar > div, .filter-bar > span, .filter-bar > .btn {
@@ -321,7 +317,6 @@ TA FIXES
 @media screen and (min-width: 40rem) {
     .dashboard__main-wrapper.view-mode .r2i-TA-x-small {
         width: calc(50% - 1.43rem);
-        -ms-flex: 0 1 auto;
         flex: 0 1 auto;
     }
 }
@@ -329,7 +324,6 @@ TA FIXES
 @media screen and (min-width: 60rem) {
     .dashboard__main-wrapper.view-mode .r2i-TA-x-small {
         width: calc(33.3% - 1.43rem);
-        -ms-flex: 0 1 auto;
         flex: 0 1 auto;
     }
 }
@@ -337,7 +331,6 @@ TA FIXES
 @media screen and (min-width: 80rem) {
     .dashboard__main-wrapper.view-mode .r2i-TA-x-small {
         width: calc(25% - 1.43rem);
-        -ms-flex: 0 1 auto;
         flex: 0 1 auto;
     }
 }
@@ -345,7 +338,6 @@ TA FIXES
 @media screen and (min-width: 100rem) {
     .dashboard__main-wrapper.view-mode .r2i-TA-x-small {
         width:  calc(20% - 1.43rem);
-        -ms-flex: 0 1 auto;
         flex: 0 1 auto;
     }
 }
@@ -356,7 +348,6 @@ TA FIXES
 
 /* Filter bar fixes in IE*/
 .report-filters-horizontal {
-    display: -ms-flexbox;
     display: flex;
 }
 
@@ -404,7 +395,6 @@ TA FIXES
 @media screen and (min-width: 600px) {
     .dashboard__sidebar {
         animation: animateSidebarDesktopShowFixed .5s ease;
-        -ms-flex: 0 0 auto;
         flex: 0 0 auto;
     }
 }

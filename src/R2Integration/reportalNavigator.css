@@ -4,90 +4,90 @@
     background-color: var(--header-background-color, #fff);
     border:0;
 
-& ul{
-      margin-bottom: 0;
-      padding-left: 0;
-      list-style: none;
+    & ul{
+          margin-bottom: 0;
+          padding-left: 0;
+          list-style: none;
 
-& > li{
-      height: 35px;
-      margin: 0;
-      float: left;
-      display: block;
-      position: relative;
+        & > li{
+              height: 35px;
+              margin: 0;
+              float: left;
+              display: block;
+              position: relative;
 
-& > *:nth-last-child(2){
-      /* style for element with a nested dropdown*/
-      padding-right: 42px;
-      position:relative;
+            & > *:nth-last-child(2){
+                  /* style for element with a nested dropdown*/
+                  padding-right: 42px;
+                  position:relative;
 
-&:after{
-     content: " ";
-     position:relative;
-     left: 10px;
-     width: 16px;
-     height:16px;
-     border-left:1px solid var(--secondary-text-color);
- }
+                &:after{
+                     content: " ";
+                     position:relative;
+                     left: 10px;
+                     width: 16px;
+                     height:16px;
+                     border-left:1px solid var(--secondary-text-color);
+                 }
 
-&:before{
-     @apply --arrow-down;
-     right: 12px;
-     bottom: 15px;
- }
+                &:before{
+                     @apply --arrow-down;
+                     right: 12px;
+                     bottom: 15px;
+                 }
 
-}
+            }
 
-& > a {
-      position: relative;
-      display: block;
-      padding: 10px 15px;
-      background-color: var(--background-color);
-      border: 0;
-      border-radius: 0;
-      color: var(--primary-text-color) !important;
-      fill: var(--primary-text-color);
-      height: 35px;
-      line-height: 1;
-      margin-right: 1px;
-      transition: .25s background-color ease-in-out;
-      outline:0;
-      text-decoration:none !important;
-  }
+            & > a {
+                  position: relative;
+                  display: block;
+                  padding: 10px 15px;
+                  background-color: var(--background-color);
+                  border: 0;
+                  border-radius: 0;
+                  color: var(--primary-text-color) !important;
+                  fill: var(--primary-text-color);
+                  height: 35px;
+                  line-height: 1;
+                  margin-right: 1px;
+                  transition: .25s background-color ease-in-out;
+                  outline:0;
+                  text-decoration:none !important;
+              }
 
-&.css-menu-selected > a,
-&.css-menu-child-selected > a,
-&.css-menu-topitem > a:hover,
-& > a.yui3-menu-label-menuvisible:not(.css-menu-sublabel){
-      background-color: var(--light-primary-color);
-      height: 39px;
-      margin-top: -4px;
-      padding-top: 14px;
-  }
-}
+            &.css-menu-selected > a,
+            &.css-menu-child-selected > a,
+            &.css-menu-topitem > a:hover,
+            & > a.yui3-menu-label-menuvisible:not(.css-menu-sublabel){
+                  background-color: var(--light-primary-color);
+                  height: 39px;
+                  margin-top: -4px;
+                  padding-top: 14px;
+              }
+        }
 
-& ul > li {
-      float:none;
+        & ul > li {
+              float:none;
 
-& > *:nth-last-child(2){
-      /* style for element with a nested dropdown*/
-      padding-right: 32px;
+            & > *:nth-last-child(2){
+                  /* style for element with a nested dropdown*/
+                  padding-right: 32px;
 
-&:after{
-     display:none;
- }
+                &:after{
+                     display:none;
+                 }
 
-&:before{
-     border-width: 5px 0 5px 5px;
-     border-color: transparent transparent transparent var(--background-color);
-     bottom:13px;
- }
-}
-&.yui3-menuitem-active > a,
-& > a.yui3-menu-label-active,
-& > a.yui3-menu-label-menuvisible {
-      background-color:var(--light-primary-color);
-  }
-}
-}
+                &:before{
+                     border-width: 5px 0 5px 5px;
+                     border-color: transparent transparent transparent var(--background-color);
+                     bottom:13px;
+                 }
+            }
+            &.yui3-menuitem-active > a,
+            & > a.yui3-menu-label-active,
+            & > a.yui3-menu-label-menuvisible {
+                  background-color:var(--light-primary-color);
+              }
+        }
+    }
 }

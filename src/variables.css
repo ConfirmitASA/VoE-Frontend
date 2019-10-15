@@ -1,7 +1,6 @@
 /* Config to define variables */
 :root {
     /* theme colors defined*/
-    /*--dark-primary-color:       #444445;*/
     --background-color:    #e1e4e9;
     --header-background-color: #ffffff;
     --filter-panel-background-color: #ffffff;
@@ -12,7 +11,6 @@
     --button-text-color:       #FFFFFF;
     --button-hover-color:        #00b0ff;
     --button-main-color:     #40c4ff;
-    /*--light-accent-color:       #e6f5fc; */
     --table-column-color: #f6f6f6;
     --primary-text-color:       #3F454C;
     --secondary-text-color:     #737B8E;
@@ -30,7 +28,6 @@
     --negative-color:#fd9900;
 
     /*correlaton colors */
-
     --issues:#ee627d;
     --strength: #7cc700;
     --monitor: #ffb944;
@@ -99,13 +96,11 @@
         color: var(--primary-text-color);
     };
     --reportal-button:{
-        -webkit-appearance: button;
         display: inline-block;
         margin-bottom: 0;
         text-align: center;
         cursor: pointer;
         border: 1px solid transparent;
-        -webkit-user-select: none;
         user-select: none;
         @apply --transition;
         background-color: transparent;
@@ -116,6 +111,5 @@
         font-size: 14px;
         border-radius: var(--border-radius,3px);
         font-weight: 400;
-
     };
 }

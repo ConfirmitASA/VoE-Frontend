@@ -1,9 +1,6 @@
 .co-st-r-widget-kpi {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    /*margin-top: 1.714rem;*/
     min-height: 20.143rem;
     width: 100%;
 }
@@ -13,16 +10,13 @@
 }
 
 .co-st-r-widget-kpi--no-content {
-    -ms-flex-line-pack: center;
     align-content: center;
     height: 100%;
     min-height: 20.143rem
 }
 
 .co-st-r-widget-kpi--no-content, .co-st-r-widget-kpi .main-metric-wrapper {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
     justify-content: center;
     width: 100%
 }
@@ -74,11 +68,8 @@
 }
 
 .co-st-r-widget-kpi .sec-metric-wrapper {
-    -ms-flex-item-align: end;
     align-self: flex-end;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
     justify-content: center;
     width: 100%
 }
@@ -88,16 +79,12 @@
 }
 
 .co-st-r-widget-kpi .sec-metric--two-metrics {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex: 1 1 50%;
     flex: 1 1 50%;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap
 }
 
 .co-st-r-widget-kpi .sec-metric--two-metrics .sec-metric__text {
-    -ms-flex-item-align: start;
     align-self: flex-start
 }
 
@@ -121,7 +108,6 @@
 }
 
 .co-st-r-widget-kpi .sec-metric__number {
-    -ms-flex-item-align: end;
     align-self: flex-end;
     color: var(--primary-text-color);
     font: 300 2.286rem/1.25 Source Sans Pro, Arial, Helvetica, Geneva, sans-serif;
