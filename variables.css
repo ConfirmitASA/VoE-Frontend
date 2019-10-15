@@ -1,0 +1,121 @@
+/* Config to define variables */
+:root {
+    /* theme colors defined*/
+    /*--dark-primary-color:       #444445;*/
+    --background-color:    #e1e4e9;
+    --header-background-color: #ffffff;
+    --filter-panel-background-color: #ffffff;
+    --widget-background-color: #ffffff;
+    --header-text-color: #3F454C;
+    --light-primary-color:      #f0f2f5;
+    --light-primary-hover-color:      #e3e5e9;
+    --button-text-color:       #FFFFFF;
+    --button-hover-color:        #00b0ff;
+    --button-main-color:     #40c4ff;
+    /*--light-accent-color:       #e6f5fc; */
+    --table-column-color: #f6f6f6;
+    --primary-text-color:       #3F454C;
+    --secondary-text-color:     #737B8E;
+    --disabled-text-color:      #ccc;
+    --divider-color:            #ccc;
+    --light-divider-color:      #e1e4e9;
+
+    /* significant change backgrounds */
+    --increasing: #dafda2;
+    --decreasing: #ffb3c0;
+
+    /* conditional formatting colors */
+    --positive-color:#7cc700;
+    --neutral-color:#cdd1d9;
+    --negative-color:#fd9900;
+
+    /*correlaton colors */
+
+    --issues:#ee627d;
+    --strength: #7cc700;
+    --monitor: #ffb944;
+    --maintain: #82b8ec;
+
+    --font-family: "Source Sans Pro", "Helvetica Neue", Roboto, sans-serif;
+
+    /* `container` gives a contained effect by setting a padding on sides to push contents from edges of the screen */
+    --container:{
+        padding: 0 15px;
+        margin: 0 auto;
+    };
+
+    --arrow-down:{
+        content: " ";
+        position: absolute;
+        border-color: var(--primary-text-color) transparent transparent;
+        border-style: solid;
+        border-width: 5px 5px 0;
+        display: block;
+        height: 0;
+        width: 0;
+    };
+
+    /* all elements must inherit this */
+    --border-radius:3px;
+
+    --transition:{
+        transition-delay: 0s;
+        transition-duration: .25s !important;
+        transition-property: opacity,background-color,color,fill !important;
+        transition-timing-function: ease-in-out !important;
+    };
+
+    /* icons */
+    --icon-export:url(data:image/svg+xml,%3Csvg%20fill%3D%22%2334393f%22%20%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M19.35%2010.04C18.67%206.59%2015.64%204%2012%204%209.11%204%206.6%205.64%205.35%208.04%202.34%208.36%200%2010.91%200%2014c0%203.31%202.69%206%206%206h13c2.76%200%205-2.24%205-5%200-2.64-2.05-4.78-4.65-4.96zM17%2013l-5%205-5-5h3V9h4v4h3z%22/%3E%3C/svg%3E);
+    --icon-report-list:url(data:image/svg+xml,%3Csvg%20fill%3D%22%23000000%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M3%2013h2v-2H3v2zm0%204h2v-2H3v2zm0-8h2V7H3v2zm4%204h14v-2H7v2zm0%204h14v-2H7v2zM7%207v2h14V7H7z%22%2F%3E%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E);
+    --icon-preferences:url("data:image/svg+xml,%3Csvg fill='%23000000' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z'/%3E%3C/svg%3E");
+    --icon-report-logoff:url("data:image/svg+xml,%3Csvg fill='%23000000' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5c-1.11 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z'/%3E%3C/svg%3E");
+    --icon-report-filters: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath xmlns='http://www.w3.org/2000/svg' d='M 2 4 l 7 7 v 9 l 6 -2 V 11 l 7 -7 Z'%3E%3C/path%3E%3C/svg%3E");
+    --icon-report-settings: url("data:image/svg+xml,%3Csvg fill='%23000000' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z'/%3E%3C/svg%3E");
+    --icon-add:url(data:image/svg+xml,%3Csvg%20fill%3D%22%2334393f%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M19%2013h-6v6h-2v-6H5v-2h6V5h2v6h6v2z%22/%3E%3C/svg%3E);
+    --icon-filter:url(data:image/svg+xml,%3Csvg%20fill%3D%22%2334393f%22%20viewBox%3D%220%200%2016%2012%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%200l6%206v6l4-1V6l6-6z%22/%3E%3C/svg%3E);
+    --icon-hierarchy-tree:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22%2334393f%22%3E%3Cpath%20d%3D%22m21.5%205l-15.5%200%200%201.5%2015.5%200%200-1.5zm0%204.5l-9.7%200%200%201.5%209.7%200%200-1.5zM21.7%2014l-15.5%200%200%201.5%2015.5%200%200-1.5zm0%204.5l-9.7%200%200%201.5%209.7%200%200-1.5zM3%205c0%200%200.9%201.5%200.9%201.5%200%200%200.9-1.5%200.9-1.5%200%200-1.8%200-1.8%200zM3%2014c0%200%200.9%201.5%200.9%201.5%200%200%200.9-1.5%200.9-1.5%200%200-1.8%200-1.8%200z%22/%3E%3C/svg%3E);
+    --icon-hierarchy-flat:url(data:image/svg+xml,%3Csvg%20fill%3D%22%2334393f%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M3%2015h18v-2H3v2zm0%204h18v-2H3v2zm0-8h18V9H3v2zm0-6v2h18V5H3z%22/%3E%3C/svg%3E);
+    --icon-search:url(data:image/svg+xml,%3Csvg%20fill%3D%22%23000000%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M15.5%2014h-.79l-.28-.27C15.41%2012.59%2016%2011.11%2016%209.5%2016%205.91%2013.09%203%209.5%203S3%205.91%203%209.5%205.91%2016%209.5%2016c1.61%200%203.09-.59%204.23-1.57l.27.28v.79l5%204.99L20.49%2019l-4.99-5zm-6%200C7.01%2014%205%2011.99%205%209.5S7.01%205%209.5%205%2014%207.01%2014%209.5%2011.99%2014%209.5%2014z%22/%3E%0A%3C/svg%3E);
+    --icon-face-negative:url(data:image/svg+xml,%3Csvg%20height%3D%2248%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2248%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2215.5%22%20cy%3D%229.5%22%20r%3D%221.5%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228.5%22%20cy%3D%229.5%22%20r%3D%221.5%22/%3E%0A%20%20%20%20%3Cpath%20d%3D%22M11.99%202C6.47%202%202%206.48%202%2012s4.47%2010%209.99%2010C17.52%2022%2022%2017.52%2022%2012S17.52%202%2011.99%202zM12%2020c-4.42%200-8-3.58-8-8s3.58-8%208-8%208%203.58%208%208-3.58%208-8%208zm0-6c-2.33%200-4.32%201.45-5.12%203.5h1.67c.69-1.19%201.97-2%203.45-2s2.75.81%203.45%202h1.67c-.8-2.05-2.79-3.5-5.12-3.5z%22/%3E%0A%3C/svg%3E);
+    --icon-face-neutral:url(data:image/svg+xml,%3Csvg%20height%3D%2248%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2248%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M9%2014h6v1.5H9z%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2215.5%22%20cy%3D%229.5%22%20r%3D%221.5%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228.5%22%20cy%3D%229.5%22%20r%3D%221.5%22/%3E%0A%20%20%20%20%3Cpath%20d%3D%22M11.99%202C6.47%202%202%206.48%202%2012s4.47%2010%209.99%2010C17.52%2022%2022%2017.52%2022%2012S17.52%202%2011.99%202zM12%2020c-4.42%200-8-3.58-8-8s3.58-8%208-8%208%203.58%208%208-3.58%208-8%208z%22/%3E%0A%3C/svg%3E);
+    --icon-face-positive:url(data:image/svg+xml,%3Csvg%20height%3D%2248%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2248%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2215.5%22%20cy%3D%229.5%22%20r%3D%221.5%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228.5%22%20cy%3D%229.5%22%20r%3D%221.5%22/%3E%0A%20%20%20%20%3Cpath%20d%3D%22M11.99%202C6.47%202%202%206.48%202%2012s4.47%2010%209.99%2010C17.52%2022%2022%2017.52%2022%2012S17.52%202%2011.99%202zM12%2020c-4.42%200-8-3.58-8-8s3.58-8%208-8%208%203.58%208%208-3.58%208-8%208zm0-4c-1.48%200-2.75-.81-3.45-2H6.88c.8%202.05%202.79%203.5%205.12%203.5s4.32-1.45%205.12-3.5h-1.67c-.7%201.19-1.97%202-3.45%202z%22/%3E%0A%3C/svg%3E);
+    --icon-comment:url(data:image/svg+xml,%3Csvg%20fill%3D%22%23a4a7ac%22%20height%3D%2248%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2248%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M20%202H4c-1.1%200-2%20.9-2%202v18l4-4h14c1.1%200%202-.9%202-2V4c0-1.1-.9-2-2-2zm0%2014H6l-2%202V4h16v12z%22/%3E%0A%3C/svg%3E);
+    --icon-arrow-up:url(data:image/svg+xml,%3Csvg%20fill%3D%22%2334393f%22%20height%3D%2220%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2220%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M4%2012l1.41%201.41L11%207.83V20h2V7.83l5.58%205.59L20%2012l-8-8-8%208z%22/%3E%3C/svg%3E);
+    --icon-hourglass:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22%23a4a7ac%22%20height%3D%2220%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M6%202v6h.01L6%208.01%2010%2012l-4%204%20.01.01H6V22h12v-5.99h-.01L18%2016l-4-4%204-3.99-.01-.01H18V2H6zm10%2014.5V20H8v-3.5l4-4%204%204zm-4-5l-4-4V4h8v3.5l-4%204z%22/%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0V0z%22%20fill%3D%22none%22/%3E%0A%3C/svg%3E);
+
+
+    /* margin-unit around list elements */
+    --reportal-list-margin:8px;
+
+    --reportal-input:{
+        background: transparent;
+        font-size: 16px;
+        border: 1px solid var(--divider-color);
+        border-radius: var(--border-radius,3px);
+        position:relative;
+        z-index:1;
+        padding: 5px;
+        color: var(--primary-text-color);
+    };
+    --reportal-button:{
+        -webkit-appearance: button;
+        display: inline-block;
+        margin-bottom: 0;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid transparent;
+        -webkit-user-select: none;
+        user-select: none;
+        @apply --transition;
+        background-color: transparent;
+        height: 30px;
+        line-height: 20px;
+        position: relative;
+        padding: 4px 10px;
+        font-size: 14px;
+        border-radius: var(--border-radius,3px);
+        font-weight: 400;
+
+    };
+}
