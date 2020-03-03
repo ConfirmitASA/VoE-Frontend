@@ -15,7 +15,8 @@ body, html {
 body {
     color: #121821;
     font: 400 1rem/1.28 Source Sans Pro, Arial, Helvetica, Geneva, sans-serif;
-    line-height: normal
+    line-height: normal;
+    text-align: initial!important;
 }
 
 ol, ul {

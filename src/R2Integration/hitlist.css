@@ -1,0 +1,141 @@
+/* Style hit list as account health table in studio */
+
+.r2i-hitlist .light-grey .hitlist .yui3-datatable-table {
+    border: none;
+}
+
+/* hitlits row styles */
+
+.r2i-hitlist .light-grey .hitlist .yui3-datatable-even,
+.r2i-hitlist .light-grey .hitlist .yui3-datatable-odd,
+.r2i-hitlist .light-grey .hitlist .yui3-datatable-even td,
+.r2i-hitlist .light-grey .hitlist .yui3-datatable-odd td{
+    background-color: #ffffff;
+}
+
+/* general cell styles */
+
+.r2i-hitlist .light-grey .hitlist th.yui3-datatable-header,
+.r2i-hitlist .light-grey .hitlist th div.yui3-datatable-sort-liner,
+.r2i-hitlist .light-grey .hitlist td.yui3-datatable-cell {
+    font-family: "Source Sans Pro", Arial, Helvetica, Geneva, sans-serif;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 1rem;
+    max-width: 50rem;
+}
+
+.r2i-hitlist .light-grey .hitlist td.yui3-datatable-cell {
+    height: 4rem; /* to make div with cond. formatting occupy whole td height */
+}
+
+.r2i-hitlist .light-grey .hitlist tr th {
+    height: 2.857rem;
+    padding: 0 1.429rem;
+}
+
+.r2i-hitlist .light-grey .hitlist tr td {
+    padding: 0.714rem 1.429rem;
+}
+
+.r2i-hitlist .light-grey .hitlist tr {
+    border-bottom: .071rem solid rgba(18,24,33,.12);
+}
+
+/* hide first column with hitlist native filters */
+
+.r2i-hitlist .light-grey .hitlist thead tr th:first-child,
+.r2i-hitlist .light-grey .hitlist tbody tr td:first-child {
+    display:none;
+}
+
+.r2i-hitlist .light-grey .hitlist tbody tr td:nth-child(2) {
+    /*font-weight: 600;*/
+    min-width: 20rem;
+}
+
+/* hitlits header styles */
+
+.r2i-hitlist .light-grey .hitlist tr th.yui3-datatable-header {
+    border-top: none;
+    border-bottom: none;
+    text-shadow: none;
+    color: rgba(18, 24, 33, 0.6);
+}
+
+.r2i-hitlist .light-grey .hitlist .yui3-datatable-header,
+.r2i-hitlist .light-grey .hitlist .yui3-datatable-odd:hover .yui3-datatable-cell,
+.r2i-hitlist .light-grey .hitlist .yui3-datatable-even:hover .yui3-datatable-cell {
+    background-color: inherit;
+    background-image: none;
+}
+
+.r2i-hitlist .light-grey div.yui3-datatable-sort-liner {
+    font-size: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* hitlits data cell styles */
+
+.r2i-hitlist .light-grey .hitlist tr td {
+    border: none;
+}
+
+/* sorted column styles */
+
+.r2i-hitlist .light-grey .hitlist th.yui3-datatable-sorted {
+    border: none;
+    padding: 0 1.429rem;
+    background: inherit;
+    color: rgba(18, 24, 33, 0.6);
+}
+
+.r2i-hitlist .light-grey .hitlist td.yui3-datatable-sorted {
+    background: inherit;
+    border: none;
+    padding: 0.714rem 1.429rem;
+}
+
+/* hide native hitlist nav */
+
+.r2i-hitlist .light-grey .hitlist-dropdown-button,
+.r2i-hitlist .light-grey .hitlist-nav {
+    display: none;
+}
+
+/* conditional formatting for hitlist */
+
+.r2i-hitlist td.badScore,
+.r2i-hitlist td.neutralScore,
+.r2i-hitlist td.goodScore {
+    padding: 0px !important;
+}
+
+.r2i-hitlist .badScore div {
+    background-color: #fedfe2 !important;
+    color: #dd3435 !important;
+}
+
+.r2i-hitlist .neutralScore div {
+    background-color: #ffeed6 !important;
+    color: #ffa156 !important;
+}
+
+.r2i-hitlist .goodScore div {
+    background-color: #e8f8e0 !important;
+    color: #5ba35d !important;
+}
+
+.r2i-hitlist .badScore div,
+.r2i-hitlist .neutralScore div,
+.r2i-hitlist .goodScore div{
+    border-left: 15px white solid !important;
+    border-right: 15px white solid !important;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 1.4rem 1.4rem;
+    height: 100%;
+    text-align: center;
+}

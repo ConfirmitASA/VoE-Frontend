@@ -1,0 +1,329 @@
+/* ---- FILTER BLOCK START ---- */
+.filter {
+/*    max-width: 210px;*/
+    margin-bottom: 20px;
+}
+
+.filter_expanded {
+    height: auto;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.filter__name {
+    color: #878787;
+    font-weight: normal;
+}
+
+.filter__name  {
+    /*
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8.996' height='16.931' viewBox='0 0 8.996 16.931'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:none;stroke:%23231f20;stroke-miterlimit:10;stroke-width:0.75px;%7D%3C/style%3E%3C/defs%3E%3Cpath class='a' d='M0,0,8.2,8.2,0,16.4' transform='translate(0.266 0.266)'/%3E%3C/svg%3E");
+    */
+    background-repeat: no-repeat;
+    background-position: 0;
+    padding-left: 25px;
+}
+
+.filter_expanded .filter__name, .filter_expanded  {
+    color: #000;
+}
+
+.filter_expanded .filter__name {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16.931' height='8.996' viewBox='0 0 16.931 8.996'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:none;stroke:%23231f20;stroke-miterlimit:10;stroke-width:0.75px;%7D%3C/style%3E%3C/defs%3E%3Cpath class='a' d='M0,8.2,8.2,0,16.4,8.2' transform='translate(0.266 0.266)'/%3E%3C/svg%3E%0A");
+}
+
+.filter__selector {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.filter__selector label:not(.calendar) {
+    padding-right: 15px;
+    text-align: left;
+    display: block;
+    color: #878787;
+    max-width: 160px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+.filter__selector label:hover {
+    color: #000000;
+    cursor: pointer;
+}
+
+.filter__selector input:checked + label {
+    color: #000000;
+}
+
+/* --- custom checkboxes for filters --- */
+.filter__selector td {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Hide the browser's default checkbox */
+.filter__selector input[type="radio"],
+.filter__selector input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.filter__checkmark {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+    border: 2px solid #878787;
+}
+
+.filter__selector td:hover input ~ .filter__checkmark {
+    background-color: #f1f1f1;
+}
+
+.filter__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.filter__selector input:checked ~ .filter__checkmark:after {
+    display: block;
+}
+
+.filter__selector .filter__checkmark:after {
+    left: 3px;
+    top: 0px;
+    width: 3px;
+    height: 6px;
+    border: solid #000000;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* ---- FILTER BLOCK END ---- */
+
+
+
+/* --- DATE PICKERS BLOCK --- */
+
+.time-period-picker__calendars {
+    margin-left: 10px;
+}
+
+.time-period-picker__calendars_hidden {
+    display: none;
+}
+/* --- DATE PICKERS BLOCK END --- */
+
+
+
+/* --- CALENDAR BLOCK START --- */
+.calendar {
+    margin-right: 0px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.calendar__label {
+    min-width: 55px;
+    display: inline-block;
+}
+
+.calendar__control {
+    position: relative;
+    display: inline-block;
+}
+
+.calendar__control::before{
+    position: absolute;
+    content: " \2335";
+    top: 0;
+    right: 10px;
+    height: 10px;
+    width: 10px;
+    color: #8a8a8a;
+}
+
+.calendar__control img {
+    vertical-align: bottom !important;
+    display: none;
+}
+
+.calendar__control input {
+    width: auto !important;
+    color: #000000;
+    background-color: #d9d9d9;
+    border: 0;
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+
+
+/* Edge */
+.calendar__control input::-webkit-input-placeholder {
+    font-style: italic;
+    color: #8a8a8a;
+}
+
+/* Internet Explorer 10-11 */
+.calendar__control input:-ms-input-placeholder {
+    font-style: italic;
+    color: #8a8a8a;
+}
+
+.calendar__control input::placeholder {
+    font-style: italic;
+    color: #8a8a8a;
+
+
+}
+
+.yui-calcontainer {
+    background-color: #fff !important;
+    border: 1px solid rgba(18, 24, 33, .12) !important;
+    padding: 10px !important;
+    border-radius: 2px;
+    width: auto !important;
+}
+
+.yui-calcontainer>.title,
+.yui-calcontainer>.link-close {
+    display: none !important;
+}
+
+.yui-calcontainer>table {
+    border-collapse: separate !important;
+    border-spacing: 1px !important;
+    width: 236px;
+    font: inherit !important;
+}
+
+.yui-calcontainer>table .calheader {
+    padding: .6em 0 !important;
+}
+
+.yui-calcontainer>table .calnavleft {
+    left: 0 !important;
+}
+
+.yui-calcontainer>table .calnavleft,
+.yui-calcontainer>table .calnavright {
+    background: none !important;
+    width: 32px !important;
+    height: 32px !important;
+    padding: 6px !important;
+    top: 8px !important;
+    color: transparent !important;
+    outline: 0;
+}
+
+.yui-calcontainer>table .calnavleft:before,
+.yui-calcontainer>table .calnavright:before {
+    display: block;
+    content: '';
+    border: 1px solid #93C5B9 !important;
+    width: 10px;
+    height: 10px;
+    border-bottom:  none !important;
+}
+
+.yui-calcontainer>table .calnavleft:before {
+    border-right: none !important;
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.yui-calcontainer>table .calnavright:before {
+    border-left: none !important;
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.yui-calcontainer>table a.calnav,
+.yui-calcontainer>table td.calcell.today>a.selector {
+    background: #93C5B9 !important;
+    color: white!important;
+}
+
+.yui-calcontainer>table .calnav {
+    border: none !important;
+    border-radius: 16px;
+    -webkit-transition: background 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    padding: 6px 8px !important;
+}
+
+.yui-calcontainer>table a.calnav:hover {
+    background: #93C5B9 !important;
+    color: #FFFFFF !important;
+    border-color: transparent;
+}
+
+.yui-calcontainer>table .calweekdaycell {
+    width: 28px !important;
+    height: 28px !important;
+    color: rgba(18, 24, 33, .54) !important;
+}
+
+.yui-calcontainer>table .calrowhead {
+    padding-right: 8px !important;
+}
+
+.yui-calcontainer>table td.calcell {
+    border-radius: 50%;
+    border: 0 !important;
+    padding: 0 !important;
+    width: 28px !important;
+    height: 28px !important;
+    line-height: 28px !important;
+}
+
+.yui-calcontainer>table td.calcell>a {
+    border-radius: 50%;
+    color: inherit !important;
+    width: 28px !important;
+    height: 28px !important;
+}
+
+.yui-calcontainer>table td.calcell.oom {
+    background: transparent !important;
+    opacity: 0.3;
+}
+
+.yui-skin-sam .yui-calendar td.calcell.calcellhover {
+    background-color: #93C5B9 !important;
+    color: #fff;
+    cursor: pointer;
+}
+
+.yui-skin-sam .yui-calendar td.calcell.calcellhover a {
+    background-color: #93C5B9 !important;
+    color: #fff;
+}
+
+/* --- CALENDAR BLOCK END --- */
+

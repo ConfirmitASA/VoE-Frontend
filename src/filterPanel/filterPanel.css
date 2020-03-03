@@ -1,0 +1,29 @@
+.reportal-filterpanel {
+    display: flex;
+    flex-direction: column;
+}
+
+.dd-drilldown {
+    width: 100%;
+    height: 100%;
+}
+.filter-pane__func-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #000000;
+}
+
+
+.filter-pane__func-btns .filter-pane__save-btn {
+    /* margin-bottom: 16px; */
+    margin: unset;
+}
+
+.filter-pane__func-btns .filter-pane__reset-btn {
+    margin: unset;
+}

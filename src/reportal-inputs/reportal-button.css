@@ -1,0 +1,23 @@
+.btn, button {
+    @apply --reportal-button;
+&.active, &:active{
+               box-shadow: none;
+&>[class^=icon-]{opacity:1;}
+}
+&:hover>[class^=icon-]{opacity:1;}
+&.btn-primary {
+     color: var(--button-text-color);
+     background-color: var(--button-main-color);
+     border-color: transparent;
+&:hover,
+&:active,
+&:focus{
+     color: var(--button-text-color);
+     background-color: var(--button-hover-color);
+ }
+}
+}
+
+.redesigned-button {
+    min-width: 100px;
+}

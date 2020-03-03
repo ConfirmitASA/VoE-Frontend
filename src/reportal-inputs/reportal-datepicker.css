@@ -1,0 +1,146 @@
+.reportal-datepicker>span>span{
+&> input{
+     @apply --reportal-input;
+     height:34px;
+     padding-right:25px;
+     z-index:0;
+     width:120px ;
+     background: #fff !important;
+ }
+&>img{
+     position: absolute;
+     bottom: 8px;
+     right: 4px;
+     filter: grayscale(100%);
+ }
+}
+.yui-calcontainer{
+    background-color: #fff !important;
+    border: 1px solid var(--divider-color) !important;
+    padding: 10px !important;
+    border-radius: var(--border-radius);
+    width:auto !important;
+&>.title,
+&>.link-close{
+     display:none !important;
+ }
+&>table{
+     border-collapse:separate !important;
+     border-spacing:1px !important;
+     width:236px;
+     font:inherit !important;
+
+& .calnavleft,
+& .calnavright{
+      background: none !important;
+      width: 32px !important;
+      height: 32px !important;
+      padding: 6px !important;
+      top: 8px !important;
+      color: transparent !important;
+      outline:0;
+&:before{
+     display:block;
+     content:'';
+     border: 1px solid var(--button-main-color);
+     width:10px;
+     height:10px;
+     border-bottom: 0;
+ }
+}
+& .calnavleft{
+      left: 0 !important;
+&:before{
+     border-right: 0;
+     transform: rotate(-45deg);
+ }
+}
+& .calnavright{
+&:before{
+     border-left: 0;
+     transform: rotate(45deg);
+ }
+}
+& .calrowhead {padding-right:8px !important;}
+& .calweekdaycell{
+      width:28px !important;
+      height:28px !important;
+      color: var(--secondary-text-color) !important;
+  }
+& td.calcell {
+      border-radius:50%;
+      border:0 !important;
+      padding:0 !important;
+      width: 28px !important;
+      height:28px !important;
+      line-height:28px !important;
+
+&>a{
+     border-radius:50%;
+     color:inherit !important;
+     width: 28px !important;
+     height:28px !important;
+
+ }
+&.oom{
+     background:transparent !important;
+     opacity:0.3;
+ }
+&.today{
+     background:transparent !important;
+     line-height:26px !important;
+
+&>a{
+     /*border:1px solid var(--divider-color) !important;*/
+     background: var(--button-main-color) !important;
+ }
+}
+&.calcellhover>a{background:var(--primary-text-color) !important;}
+&.selected>a{
+     background:var(--button-main-color) !important;
+     color: var(--button-text-color) !important;
+ }
+}
+& .calheader{padding: .6em 0 !important;}
+& .calnav{
+      border:none !important;
+      border-radius: 16px;
+      background: var(--light-primary-color) !important;
+      transition: background 0.3s ease-in-out;
+      padding: 6px 8px !important;
+      color: var(--secondary-text-color) !important;
+&:hover{
+     background:var(--button-main-color) !important;
+     color:var(--button-text-color) !important;
+     border-color: transparent;
+ }
+}
+}
+
+& .yui-cal-nav{
+      background: #fff !important;
+      border-color: var(--divider-color) !important;
+      border-radius: var(--border-radius) !important;
+  }
+& select.yui-cal-nav-mc,
+& input.yui-cal-nav-yc{
+      @apply --reportal-input;
+      height:34px;
+  }
+
+& .yui-cal-nav-b{
+&>.yui-cal-nav-btn{
+     border: inherit !important;
+     background: var(--light-primary-color) !important;
+     border-radius: var(--border-radius);
+     transition: background .3s ease-in-out;
+&:hover {
+     background:var(--background-color) !important;
+ }
+&.yui-default{
+     background:var(--button-main-color) !important;
+&:hover{background:var(--button-hover-color) !important;}
+}
+}
+}
+}

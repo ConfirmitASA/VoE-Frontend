@@ -1,0 +1,51 @@
+/* ---- GAUGE-CONTAINER ---- */
+.gauge-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ---- FULL GAUGE BLOCK START ---- */
+.full-gauge {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin: auto;
+}
+
+.full-gauge__outer-circle,
+.full-gauge__inner-circle, .full-gauge__score {
+    position: absolute;
+}
+
+.full-gauge .full-gauge__outer-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.full-gauge .full-gauge__inner-circle {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    border-radius: 100%;
+}
+
+.full-gauge .full-gauge__score {
+    font-size: 2.8em;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+}
+/* ---- FULL GAUGE BLOCK END ---- */
+
+
+
+/* ---- BOTTOMLESS GAUGE BLOCK START ---- */
+.bottomless-gauge__value {
+    font-size: 2.5em;
+}
+/* ---- BOTTOMLESS GAUGE BLOCK END ---- */

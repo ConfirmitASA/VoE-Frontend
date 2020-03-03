@@ -1,0 +1,42 @@
+.page-header {
+    width: 100%;
+  /*  position: fixed; */
+    top: 0px;
+    left: 0px;
+ /*   z-index: 100; */
+}
+
+.page-header__row {
+    padding: 10px 50px;
+    width: 100%;
+    position: relative; /* to place logo and admin menu icons */
+}
+
+.page-header__row_type_info {
+    background-color: #292D31;
+    color: #ffffff;
+    text-align: right;
+    padding-left: 200px; /* to avoid columns overlap with logo on small screens */
+    min-height: 55px; /* because of logo: either adjust logo height or min-height here */
+}
+
+.page-header__column {
+    display: inline-block; /* columns of header are layed out horizontally */
+    vertical-align: top;
+    text-align: right;
+}
+
+.page-header__column_layout_horizontal > * {
+    display: inline-block; /* blocks inside of header column are layed out horizontally */
+}
+
+.page-header__column_type_statistics {
+    display: none;
+}
+
+@media (min-width: 34em) {
+
+    .page-header__column_type_statistics {
+        display: inherit;
+    }
+}

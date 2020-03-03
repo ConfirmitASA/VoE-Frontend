@@ -1,0 +1,423 @@
+/* ----- CARD BLOCK START ---- */
+.card {
+    background-color: #ffffff;
+    position: relative;
+    overflow-x: auto;
+    border-radius: 3px;
+    box-shadow: 0 0 6px 0 #ccc;
+}
+
+.card__title {
+    padding: 10px 0px;
+    margin: 0px;
+    font: 600 1.8rem/1.36 Source Sans Pro, Arial, Helvetica, Geneva, sans-serif;
+}
+.card__title {
+    padding: 1.143rem 2.857rem 1.143rem 1.143rem
+}
+
+@media screen and (min-width: 29.571rem) {
+    .card__title {
+        padding: 1.143rem 3.143rem 1.143rem 1.714rem
+    }
+}
+.card__title_position_center {
+    text-align: center;
+    display: block;
+}
+
+.card__subtitle {
+    font-weight: normal;
+    color: #878787;
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+.card__subtitle_position_center {
+    text-align: center;
+    display: block;
+}
+
+@media print {
+    .card {
+        break-inside: avoid;
+    }
+}
+
+/* card__setting element */
+.card__setting select {
+    max-width: 200px;
+    height: 100%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    color: #4A4A4A;
+    font-size: 0.8em;
+    padding-left: 10px;
+    padding-right: 20px;
+    outline: none;
+}
+
+/* card__settings element */
+.card__settings_layout_line {
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+}
+
+.card__settings_layout_line .card__setting  {
+    display: inline-block;
+}
+
+.card__settings_layout_line .card__setting_position_left {
+    float: left;
+}
+
+/* card__content */
+.card__content {
+    padding: 15px 0px;
+}
+
+/* card__switcher element */
+.card__switcher {
+    float: right;
+    padding: 0 0.25em;
+}
+
+.card__switcher::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* card settings sticky to the top */
+.card_has-sticky-settings {
+    padding-top: 42px;
+}
+
+.card_has-sticky-settings .card__settings_sticky {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 42px;	/* matches card_settings_sticky card top padding */
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.card__settings_sticky-disabled .card__settings_sticky {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.card__settings_sticky-disabled .card__setting {
+    float: none;
+    padding: 5px 0px;
+}
+
+.card__settings_sticky .card__setting {
+    vertical-align: top; /* even invisible lements should be stack to the top */
+}
+
+@media print {
+    .card_has-sticky-settings {
+        padding-top: 15px;
+    }
+
+    .card__content {
+        padding: 0px;
+    }
+}
+
+/* card modificators */
+.card_width_full {
+    width: 100%;
+}
+
+.card_width_half {
+    width: 50%;
+}
+
+.card_blurred {
+    opacity: 0.5;
+}
+
+/* card_small */
+.card_small {
+    width: calc(21em - 40px);
+}
+
+/* card_medium (like on Categorical page) */
+
+.card_medium {
+    padding: 40px;
+}
+
+.card_medium__header__title {
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.card_medium__header__description {
+    display: inline-block;
+    margin-top: 10px;
+    line-height: 1.5em;
+}
+/* not clear why needed, maybe increase padding for consistency with other cards?
+  .card_medium .card__content {
+    margin: 5% 0;
+  }
+  */
+
+@media (min-width: 28rem) {
+    .card_medium {
+        min-width: 20rem;
+        width: calc(25% - 40px);
+    }
+}
+
+@media (min-width: 35rem) {
+    .card_medium {
+        min-width: 25rem;
+    }
+}
+
+/* card_type_results */
+@media (min-width: 56rem) {
+    .card_type_results {
+        padding-left: 83px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80em;
+    }
+}
+
+@media print {
+    .card_type_results {
+        break-inside: auto;
+    }
+}
+
+/* card_type_categorical */
+.card_type_categorical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_type_categorical .card__header {
+    min-height: 120px;
+}
+
+.card_type_categorical__centered-arrow-below {
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 20px);
+    height: 0;
+    width: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #ffffff;
+}
+
+@media print {
+    .card_type_categorical .card__header {
+        min-height: 0px;
+    }
+}
+/* card_type_categorical-table */
+.card_type_categorical-table {
+    width: 100%;
+    padding: 40px;
+}
+
+.card_type_categorical-table .card__header__title {
+    width: 50%;
+    padding: .5em;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+}
+
+/* card_type_placeholder */
+.card_type_placeholder {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* card_type_kpi */
+.card_type_kpi {
+    flex-grow: 1;
+    overflow-y: hidden;
+   /* padding: 2.5em 2em;*/
+    height: auto;
+}
+
+.card_type_kpi .gauge {
+    width: 7.5em;
+    height: 7.5em;
+    margin: auto;
+}
+
+
+/* card_type_trend */
+.card_type_trend {
+    overflow-x: hidden;
+}
+
+.layout_horizontal .card_type_trend {
+    /*width: 100%;*/
+    flex-basis: 100%;
+}
+
+@media (min-width: 56rem) {
+    .layout_horizontal .card_type_trend {
+        min-width: 40rem;
+        flex: 100 0 40rem;
+    }
+}
+
+/* card_type_comments */
+.card_type_comments {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #fbfbfc !important;
+    width: 90%;
+}
+
+.card_type_comments .light-grey.hitlist-container table thead tr th:nth-child(2) {
+    width: 80%;
+}
+
+.card_type_comments .light-grey.hitlist-container table thead tr th:nth-child(3) {
+    width: 10%;
+}
+
+/* optional static columns that might be added  */
+.card_type_comments .light-grey.hitlist-container table thead tr th:nth-child(n+3) {
+    width: 15%;
+}
+
+@media print {
+    .card_type_comments {
+        break-inside: auto;
+    }
+}
+
+/* card_type_verbatim */
+.card_type_verbatim {
+    padding: 2.5em 2em 1em 2em;
+}
+
+.card_type_verbatim table tbody tr td {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+@media screen  and (min-width: 28em) {
+    .card_type_verbatim {
+        flex: 1 0 20rem;
+    }
+}
+
+@media print and (min-width: 56em) {
+    .card_type_verbatim {
+        flex: 1 0 20rem;
+    }
+}
+
+@media print {
+
+    .card_type_verbatim {
+        padding: 1em;
+    }
+
+    .card_type_verbatim table tbody tr td {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+/* card_type_wordcloud */
+.card_type_wordcloud {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.card_type_wordcloud:not(.card_type_comments) {
+    padding: 0;
+}
+
+.card_type_wordcloud.card_has-sticky-settings {
+    padding-top: 42px;
+}
+
+.card_type_wordcloud .card__content {
+    overflow-x: auto;
+}
+
+.card_type_wordcloud.card_width_full, .card_type_wordcloud.card_width_half {
+    width: 100%;
+    position: relative;
+}
+
+.card_type_wordcloud.card_type_comments {
+    width: 100%;
+}
+
+@media screen and (min-width: 70em) {
+    .card_type_wordcloud {
+        overflow: hidden;
+    }
+    .card_type_wordcloud.card_has-sticky-settings .card__settings.card__settings_sticky {
+        padding-right: 20%;
+    }
+    .card_type_wordcloud.card_has-sticky-settings {
+        padding-top: 0px;
+    }
+}
+@media screen and (min-width: 100em) {
+    .card_type_wordcloud.card_width_full {
+        width: calc(100% - 100px);
+        right: 0;
+    }
+    .card_type_wordcloud.card_width_half {
+        width: calc(50% - 100px);
+        position: fixed;
+        left: 60px;
+    }
+    .card_type_wordcloud.card_type_comments {
+        width: 50%;
+        margin-left: 50%;
+        margin-top: inherit;
+    }
+}
+
+@media print {
+    .card_type_wordcloud.card_type_comments {
+        display: none;
+    }
+}
+
+/* card_type_response */
+.card_type_response {
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+@media print {
+    .card_type_response {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media print and (min-width: 30em){
+    .card_type_response {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+}
+
+/* ----- CARD END ---- */

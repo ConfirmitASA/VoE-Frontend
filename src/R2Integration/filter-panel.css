@@ -132,14 +132,14 @@
         width: 0
     }
     to {
-        flex: 0 0 28.571rem;
+        flex: 0 0 23.571rem;
         width: 100%
     }
 }
 
 @keyframes animateSidebarDesktopHide {
     0% {
-        flex: 0 0 28.571rem;
+        flex: 0 0 23.571rem;
         width: 100%
     }
     to {
@@ -195,14 +195,14 @@
     }
     to {
         opacity: 1;
-        width: 28.571rem
+        width: 23.571rem
     }
 }
 
 @keyframes contentDesktopHide {
     0% {
         opacity: 1;
-        width: 28.571rem
+        width: 23.571rem
     }
     to {
         opacity: 0;
@@ -288,10 +288,10 @@
     .dashboard__sidebar {
         animation: animateSidebarDesktopShow .5s ease;
         border-right: .071rem solid var(--divider-color);
-        flex: 0 0 28.571rem;
-        position: relative;
+        flex: 0 0 23.571rem;
+        position: static;
         top: auto;
-        width: 28.571rem;
+        width: 23.571rem;
         z-index: auto
     }
 }

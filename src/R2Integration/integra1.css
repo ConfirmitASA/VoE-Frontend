@@ -19,7 +19,7 @@ body:not(.masked) > #wait_c {
 }
 
 /* hierarchy component styles */
-.filter-panel .dd-target-button {
+.hierarchy-filter .dd-target-button {
     text-align: left;
     height: 32px;
     padding: 0 8px;
@@ -35,14 +35,14 @@ body:not(.masked) > #wait_c {
     text-transform: uppercase
 }
 
-.filter-panel .dd-target-button:hover {
+.hierarchy-filter .dd-target-button:hover {
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
     0 1px 10px 0 rgba(0, 0, 0, 0.12),
     0 2px 4px -1px rgba(0, 0, 0, 0.4);
     background: white;
 }
 
-.filter-panel .dd-target-button:hover > .dd-target-button-arrow {
+.hierarchy-filter .dd-target-button:hover > .dd-target-button-arrow {
     opacity: 1;
 }
 

@@ -1,0 +1,37 @@
+@import "common-styles.css";
+
+.reportal-select {
+&>span{
+     background:#fff;
+     position:relative;
+ }
+& select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      width: 100%;
+      @apply --reportal-input;
+
+@media screen and (min-width:0\0) {padding: 5px;}
+
+&::-ms-expand {
+     display: none; /*removes arrow*/
+
+ }}
+& select:not([multiple]) {
+      padding: 5px 27px 5px 5px;
+      height: 34px;
+  }
+& select[multiple] {
+      padding: 5px;
+      min-width: 120px;
+  }
+
+&.reportal-dropdown span:after {
+     @apply --arrow-down;
+     right: 5px;
+     bottom: 14px;
+     z-index:0;
+ }
+}
+
+

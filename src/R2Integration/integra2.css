@@ -433,6 +433,10 @@ html{
         width: calc(50% - 1.43rem);
         flex: 0 1 auto;
     }
+    .dashboard__main-wrapper.view-mode .dashboard__widget--medium {
+        width: calc(100% - 1.43rem);
+        flex: 0 1 auto;
+    }
 }
 
 @media screen and (min-width: 74.214rem) {
@@ -445,6 +449,10 @@ html{
 @media screen and (min-width: 99.429rem) {
     .dashboard__main-wrapper.view-mode .dashboard__widget--small {
         width: calc(25% - 1.43rem);
+        flex: 0 1 auto;
+    }
+    .dashboard__main-wrapper.view-mode .dashboard__widget--medium {
+        width: calc(50% - 1.43rem);
         flex: 0 1 auto;
     }
 }
@@ -550,11 +558,11 @@ html{
     border-radius: 100%;
     background: #42bd41;
 }
-.filter-panel > div {
+.hierarchy-filter > div {
     max-width:250px;
     border-right:0 !important;
     padding:24px;
 }
-.dashboard__sidebar .filter-panel > div {
+.dashboard__sidebar .hierarchy-filter > div {
     padding:0 0 24px 0;
 }

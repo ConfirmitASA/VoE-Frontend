@@ -177,11 +177,6 @@ TA FIXES
     width: 100%;
 }
 
-/* Filter panel breakline */
-.reportal-filterpanel .reportal-select:nth-child(5) {
-    border-bottom: 2px solid var(--button-main-color);
-}
-
 .reportal-select>span {
     border-radius: 3px;
 }
@@ -242,7 +237,7 @@ TA FIXES
     height: auto;
     height: inherit;
     line-height: 1rem;
-    width: calc(100% - 20px);
+/*    width: calc(100% - 20px);*/
     padding: 0;
 }
 
@@ -269,7 +264,7 @@ TA FIXES
 .dashboard__toolbar {
     height: initial;
     position: relative;
-    padding: 16px 0;
+    padding: 8px 0;
 }
 
 .report-settings {
@@ -418,6 +413,6 @@ TA FIXES
     overflow: hidden;
 }
 
-.dashboard__sidebar .filter-panel > div {
+.dashboard__sidebar .hierarchy-filter > div {
     padding: 0 !important;
 }

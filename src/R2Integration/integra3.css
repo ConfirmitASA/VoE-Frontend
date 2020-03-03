@@ -1,0 +1,101 @@
+/** Styles to override or fix default Reportal visuals */
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    outline-color: #0087c4;
+}
+body, body.reportal-viewmode {
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--primary-text-color);
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    min-width:initial;
+}
+/** Reportal Page header styles **/
+.reportal-branding-panel{
+    background: var(--header-background-color, #ffffff);
+
+& .page-title{
+      display: inline;
+      background: var(--header-background-color, #ffffff);
+      color: var(--header-text-color, #3F454C)
+  }
+
+& .customer-logo{
+      float: right
+  }
+}
+
+/** Page Title styles. Page Title must have a `.page-title` class configured in its properties */
+.page-title{
+    @apply --container;
+
+    background-color: #fff;
+    display: block;
+    line-height: 60px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* styles for filter-bar which includes a filter button and filter summary + clear button */
+.filter-bar{
+    @apply --layout-horizontal;
+    @apply --layout-wrap;
+
+    margin:16px 24px;
+
+& .btn{
+      margin: 0 5px;
+  }
+& .filter-button{
+      background-color: var(--light-primary-color);
+      fill: var(--primary-text-color);
+      transition: .25s background-color ease-in-out;
+      margin-right:8px;
+
+&>svg{
+     background:none;
+     opacity:1;
+     margin:0;
+     vertical-align:middle;
+ }
+&:hover,
+&:active,
+&:focus{
+     background-color: var(--primary-text-color);
+     fill:var(--light-primary-color);
+ }
+}
+& div {
+      display: inline-block;
+      background: var(--background-color);
+      transition: .25s background-color ease-in-out;
+      margin: 0 5px;
+      height: 30px;
+      border-radius: 7.143rem;
+      padding: 0 8px;
+      vertical-align: top;
+      line-height: 30px;
+      font-size: 13px;
+      cursor: default;
+      pointer-events: painted;
+  }
+
+& span{
+      height: 30px;
+      border-radius: 3px;
+      padding: 0 8px;
+      vertical-align: top;
+      line-height: 30px;
+      font-size: 13px;
+      cursor: default;
+      pointer-events: painted;
+  }
+
+}
+
+.js-hidden {
+    display: none;
+}
